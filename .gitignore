@@ -1,4 +1,4 @@
-build/obj
-build/lst
+build/obj/
+build/lst/
+.dep/
 
-.
