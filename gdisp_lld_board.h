@@ -8,6 +8,9 @@
 #ifndef _GDISP_LLD_BOARD_H
 #define _GDISP_LLD_BOARD_H
 
+#include "ch.h"
+#include "spi.h"
+
 /**
  * @brief   Initialize the board for the display.
  * @notes	This board definition uses GPIO and assumes exclusive access to these GPIO pins
@@ -16,6 +19,12 @@
 static inline void init_board(void) {
   /* Configure SPI bus here. Up to 10Mhz, SPI Mode = 3 (CPOL = 1, CPHA = 0) */
   /* Configure A0, !CS, !RST pin for output */
+  SPIDriver* spi;
+  SPIConfig* config;
+  spiInit();
+  spiObjectInit(spi);
+  spiStart(spi, config)
+
 }
 
 /**
