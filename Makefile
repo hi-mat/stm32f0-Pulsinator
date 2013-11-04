@@ -55,7 +55,7 @@ endif
 #
 
 # Define project name here
-PROJECT = ch
+PROJECT = pulsinator
 
 # Imported source files and paths
 CHIBIOS = /home/matt/arm_cortex/ChibiOS
@@ -67,8 +67,7 @@ include $(CHIBIOS)/os/ports/GCC/ARMCMx/STM32F0xx/port.mk
 include $(CHIBIOS)/os/kernel/kernel.mk
 include $(CHIBIOS)/test/test.mk
 include $(GFXLIB)/gfx.mk
-include $(GFXLIB)/drivers/gdisp/SSD2119/gdisp_lld.mk
-include $(GFXLIB)/drivers/ginput/touch/STMPE811/ginput_lld.mk
+include $(GFXLIB)/drivers/gdisp/ST7565/gdisp_lld.mk
 
 # Define linker script file here
 LDSCRIPT= $(PORTLD)/STM32F051x8.ld
@@ -82,7 +81,7 @@ CSRC = $(PORTSRC) \
        $(PLATFORMSRC) \
        $(BOARDSRC) \
        $(GFXSRC) \
-       main.c
+       main.c motor.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.

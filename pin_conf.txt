@@ -1,0 +1,7 @@
+
+SI		| PA7
+SCL		| PA5
+A0		| PA6
+/RST	| PA3
+/CS1	| PA4
+BL		| PB0

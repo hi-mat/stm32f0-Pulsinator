@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ARMCM0-STM32F051-DISCOVERY</name>
+	<name>stm32f0-Pulsinator</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -20,24 +20,35 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
-			<name>board</name>
+			<name>ChibiOS</name>
 			<type>2</type>
-			<locationURI>CHIBIOS/boards/ST_STM32F0_DISCOVERY</locationURI>
+			<location>/home/matt/arm_cortex/ChibiOS</location>
+		</link>
+		<link>
+			<name>boards</name>
+			<type>2</type>
+			<location>/home/matt/arm_cortex/ChibiOS/boards/ST_STM32F0_DISCOVERY</location>
+		</link>
+		<link>
+			<name>hal</name>
+			<type>2</type>
+			<location>/home/matt/arm_cortex/ChibiOS/os/hal/include</location>
 		</link>
 		<link>
 			<name>os</name>
 			<type>2</type>
-			<locationURI>CHIBIOS/os</locationURI>
+			<location>/home/matt/arm_cortex/ChibiOS/os/kernel/include</location>
 		</link>
 		<link>
-			<name>test</name>
+			<name>platforms</name>
 			<type>2</type>
-			<locationURI>CHIBIOS/test</locationURI>
+			<location>/home/matt/arm_cortex/ChibiOS/os/hal/platforms/STM32F0xx</location>
 		</link>
 	</linkedResources>
 </projectDescription>

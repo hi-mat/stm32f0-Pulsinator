@@ -156,12 +156,14 @@
 */
 
 /* Optional Low Level Driver Definitions */
+
+#define GDISP_USE_CUSTOM_BOARD		FALSE
+#define GDISP_SCREEN_WIDTH			128
+#define GDISP_SCREEN_HEIGHT			32
 /*
-	#define GDISP_USE_CUSTOM_BOARD		FALSE
-	#define GDISP_SCREEN_WIDTH			320
-	#define GDISP_SCREEN_HEIGHT			240
 	#define TDISP_COLUMNS				16
 	#define TDISP_ROWS					2
 */
+
 
 #endif /* _GFXCONF_H */
